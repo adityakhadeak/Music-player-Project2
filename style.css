@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+    body {
+        margin: 0;
+        background-color: rgb(32, 32, 32);
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-container {
+        display: flex;
+        color: white;
+        background-color: black;
+        height: 65px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logo-div {
+        margin-left: 10px;
+    }
+
+    #logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    #logo-name {
+        margin-left: 7px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .nav-bar ul li a {
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .nav-bar {
+        display: flex;
+        margin-left: 5px;
+    }
+
+    .nav-items {
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .nav-item {
+        margin: 10px;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .music-container {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        margin: 30px;
+        height: 70vh;
+        width: 130vh;
+
+    }
+
+    .music-container h1 {
+        margin: 30px;
+
+    }
+
+    .songs {
+        display: flex;
+        margin-left: 30px;
+        flex-direction: column;
+    }
+
+    .song {
+        display: flex;
+        border-radius: 23px;
+        margin: 10px 0;
+        width: 50vh;
+        height: 8vh;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .song:hover{
+        transition: all;
+        transition-duration: 0.05;
+        box-shadow:2px 2px 30px rgb(193, 190, 190);
+    }
+    .song:active{
+        box-shadow:2px 2px 30px rgb(193, 190, 190);
+    }
+
+    .song-cover {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 5px;
+        border-radius: 100%;
+    }
+
+    .song-name {
+        color: black;
+        font-weight: 500;
+    }
+
+    .song-len {
+        color: black;
+    }
+
+    .fa-dark {
+        color: black;
+        position: relative;
+        right: 5px;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 12vh;
+        color: white;
+    }
+
+    #seek-song {
+        width: 60vw;
+        cursor: pointer;
+    }
+    .song-btns i{
+       margin-top: 3px;
+    }
+    #masterPlay{
+        cursor: pointer;
+    }
+    #backward{
+        cursor: pointer;
+    }
+    #forward{
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 450px) and (min-width: 281px)  {
+        .music-container h1 {
+             text-align: center;
+        }
+
+        .songs {
+            align-items: center;
+            margin-left: 1px;
+        } 
+        .song {
+            width: 30vh;
+        } 
+
+        .song-len {
+            display: none;
+        }
+
+        .song-name {
+            margin-left:12px ;
+            width: 125px;
+        }
+    }
+
+    @media screen and (max-width: 280px) {
+        .music-container h1 {
+             text-align: center;
+             margin-top: 3px;
+        }
+
+        .song {
+            width: 30vh;
+        } 
+
+        .songs {
+            align-items: center;
+            margin-left: 1px;
+        } 
+
+        .song-cover {
+            display: none;
+        }
+
+        .song-name {
+            margin-left:15px ;
+        }
+
+        .song-len {
+            display: none;
+        }
+
+        .nav-bar {
+            display: none;
+        
+    }}
